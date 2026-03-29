@@ -32,22 +32,22 @@ CRMLSSold202512.csv,
 
 **Data Preprocessing:**
 1. Data Cleaning
-Removed duplicates
-Dropped columns with excessive missing values (>35%)
-Dropped irrelevant or high-cardinality identifier fields (e.g., ListingId, agent info, addresses)
+- Removed duplicates
+- Dropped columns with excessive missing values (>35%)
+- Dropped irrelevant or high-cardinality identifier fields (e.g., ListingId, agent info, addresses)
 2. Missing Values
-Rows/columns with significant null values were removed
-Final dataset was cleaned using dropna()
+- Rows/columns with significant null values were removed
+- Final dataset was cleaned using dropna()
 3. Encoding
-Categorical variables were converted using Label Encoding
+- Categorical variables were converted using Label Encoding
 4. Feature Scaling
-Applied:
-MinMaxScaler
-StandardScaler
-(used for normalization experiments)
+- Applied:
+  MinMaxScaler
+  StandardScaler
+  (used for normalization experiments)
 5. Feature Engineering
-Created additional feature:
-bed_bath_ratio = BedroomsTotal / (BathroomsTotalInteger + 0.5)
+- Created additional feature:
+  bed_bath_ratio = BedroomsTotal / (BathroomsTotalInteger + 0.5)
 
 **Models Tested**
 1. Linear Regression
