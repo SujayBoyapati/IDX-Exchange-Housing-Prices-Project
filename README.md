@@ -18,8 +18,8 @@ CRMLSSold202512.csv,
 
 
 **Properties:**
-PropertyType = Residential
-PropertySubType = SingleFamilyResidence
+- PropertyType = Residential
+- PropertySubType = SingleFamilyResidence
 
 **Key Features:**
 ClosePrice (target variable)
