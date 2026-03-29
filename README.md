@@ -3,17 +3,18 @@ This project builds machine learning models to predict real estate closing price
 The goal is to analyze key housing features and evaluate how well different regression models can predict the closing price of a given property. 
 
 **The dataset(Files Used):**
-CRMLSSold202502.csv
-CRMLSSold202503.csv
-CRMLSSold202504.csv
-CRMLSSold202505.csv
-CRMLSSold202506.csv
-CRMLSSold202507.csv
-CRMLSSold202508.csv
-CRMLSSold202509.csv
-CRMLSSold202510.csv
-CRMLSSold202511.csv
-CRMLSSold202512.csv
+
+CRMLSSold202502.csv,
+CRMLSSold202503.csv,
+CRMLSSold202504.csv,
+CRMLSSold202505.csv,
+CRMLSSold202506.csv,
+CRMLSSold202507.csv,
+CRMLSSold202508.csv,
+CRMLSSold202509.csv,
+CRMLSSold202510.csv,
+CRMLSSold202511.csv,
+CRMLSSold202512.csv,
 
 
 **Properties:**
