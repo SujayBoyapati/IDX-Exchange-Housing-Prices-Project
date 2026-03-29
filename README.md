@@ -93,7 +93,8 @@ Top Features:
 
 
 **Key Insights**:
-- Living Area and Bathrooms are the strongest predictors of house price.
-- Tree-based models significantly outperform linear regression.
-- Feature engineering (like bed-bath ratio) improved interpretability and how the features had an impact.
-- Housing prices are highly nonlinear, making ensemble models more suitable.
+- Living Area and Bathrooms were the strongest predictors of house price.
+- Tree-based models significantly outperformed a basic linear regression model. 
+- Feature engineering (like bed-bath ratio) improved interpretability and how much of an impact the features had on the result.
+- Due to the high non linearity with housing prices, ensemble models were more suitable.
+  
