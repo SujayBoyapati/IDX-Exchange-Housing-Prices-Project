@@ -2,8 +2,8 @@
 This project builds machine learning models to predict real estate closing prices using MLS (Multiple Listing Service) data. The dataset spans multiple monthly CSV files and includes residential property listings, with a focus on Single Family Residences.
 The goal is to analyze key housing features and evaluate how well different regression models can predict the closing price of a given property. 
 
-**The dataset(Files Used):**
 
+**The dataset(Files Used):**
 CRMLSSold202502.csv,
 CRMLSSold202503.csv,
 CRMLSSold202504.csv,
@@ -22,13 +22,13 @@ CRMLSSold202512.csv,
 - PropertySubType = SingleFamilyResidence
 
 **Key Features:**
-ClosePrice (target variable)
-LivingArea
-BedroomsTotal
-BathroomsTotalInteger
-LotSizeSquareFeet
-PropertyType
-PropertySubType
+- ClosePrice (target variable)
+- LivingArea
+- BedroomsTotal
+- BathroomsTotalInteger
+- LotSizeSquareFeet
+- PropertyType
+- PropertySubType
 
 **Data Preprocessing:**
 1. Data Cleaning
@@ -65,36 +65,35 @@ learning_rate = 0.1
 subsample = 0.8
 
 **Model Evaluation Metrics**:
-
 Models were evaluated using:
-R² Score
-Mean Squared Error (MSE)
-Root Mean Squared Error (RMSE)
-Median Absolute Percentage Error (mdAPE)
+- R² Score
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- Median Absolute Percentage Error (mdAPE)
 
 Linear Regression:
-Used as baseline model
-Performed worse than tree-based models due to nonlinear relationships in housing data
+- Used as baseline model
+- Performed worse than tree-based models due to nonlinear relationships in housing data
 
 Random Forest (Best Performing Model):
-R² Score: ~0.863
-mdAPE: ~8.69%
+- R² Score: ~0.863
+- mdAPE: ~8.69%
 Top Features:
-LivingArea (19.03%)
-BathroomsTotalInteger (19.03%)
-PropertyType (15.21%)
+- LivingArea (19.03%)
+- BathroomsTotalInteger (19.03%)
+- PropertyType (15.21%)
 
 XGBoost Model:
-R² Score: ~0.796
-mdAPE: ~18.75%
+- R² Score: ~0.796
+- mdAPE: ~18.75%
 Top Features:
-PropertyType (19.44%)
-BathroomsTotalInteger (14.14%)
-LivingArea (13.53%)
+- PropertyType (19.44%)
+- BathroomsTotalInteger (14.14%)
+- LivingArea (13.53%)
 
 
-📌 Key Insights
-Living Area and Bathrooms are the strongest predictors of house price.
-Tree-based models significantly outperform linear regression.
-Feature engineering (like bed-bath ratio) improved interpretability and how the features had an impact.
-Housing prices are highly nonlinear, making ensemble models more suitable.
+**Key Insights**:
+- Living Area and Bathrooms are the strongest predictors of house price.
+- Tree-based models significantly outperform linear regression.
+- Feature engineering (like bed-bath ratio) improved interpretability and how the features had an impact.
+- Housing prices are highly nonlinear, making ensemble models more suitable.
