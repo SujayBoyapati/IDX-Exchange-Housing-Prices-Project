@@ -1,5 +1,3 @@
-**SUJAY BOYAPATI's README File**
-
 # IDX-Exchange-Housing-Prices-Project 
 This project builds machine learning models to predict real estate closing prices using MLS (Multiple Listing Service) data. The dataset spans multiple monthly CSV files and includes residential property listings, with a focus on Single Family Residences.
 The goal is to analyze key housing features and evaluate how well different regression models can predict the closing price of a given property. 
@@ -51,6 +49,7 @@ CRMLSSold202512.csv,
 - Created additional feature:
   bed_bath_ratio = BedroomsTotal / (BathroomsTotalInteger + 0.5)
 
+**SUJAY BOYAPATI's Models**
 **Models Tested**
 1. Linear Regression
 Baseline model for performance comparison
