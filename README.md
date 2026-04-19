@@ -1,4 +1,6 @@
-# IDX-Exchange-Housing-Prices-Project
+**SUJAY BOYAPATI's README File**
+
+# IDX-Exchange-Housing-Prices-Project 
 This project builds machine learning models to predict real estate closing prices using MLS (Multiple Listing Service) data. The dataset spans multiple monthly CSV files and includes residential property listings, with a focus on Single Family Residences.
 The goal is to analyze key housing features and evaluate how well different regression models can predict the closing price of a given property. 
 
@@ -76,24 +78,24 @@ Linear Regression:
 - Performed worse than tree-based models due to nonlinear relationships in housing data
 
 Random Forest (Best Performing Model):
-- R² Score: ~0.863
-- mdAPE: ~8.69%
+- R² Score: ~0.857
+- mdAPE: ~7.219%
 Top Features:
-- LivingArea (19.03%)
-- BathroomsTotalInteger (19.03%)
-- PropertyType (15.21%)
+- LivingArea (21.58%)
+- BathroomsTotalInteger (18.01%)
+- PropertyType (14.76%)
 
 XGBoost Model:
 - R² Score: ~0.796
 - mdAPE: ~18.75%
 Top Features:
-- PropertyType (19.44%)
-- BathroomsTotalInteger (14.14%)
-- LivingArea (13.53%)
+- PropertyType (21.17%)
+- BathroomsTotalInteger (15.30%)
+- LivingArea (12.35%)
 
 
 **Key Insights**:
-- Living Area and Bathrooms were the strongest predictors of house price.
+- Living Area and BathroomsTotalInteger were the strongest predictors of house price.
 - Tree-based models significantly outperformed a basic linear regression model. 
 - Feature engineering (like bed-bath ratio) improved interpretability and how much of an impact the features had on the result.
 - Due to the high non linearity with housing prices, ensemble models were more suitable.
